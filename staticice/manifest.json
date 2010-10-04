@@ -1,0 +1,7 @@
+{
+    "name": "Static Ice Search",
+    "version": "1.0",
+    "description": "Quick search for static ice",
+    "permissions": ["contextMenus", "tabs", "http://*/*"],
+    "background_page": "background.html"
+}

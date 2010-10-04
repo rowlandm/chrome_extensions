@@ -1,0 +1,7 @@
+{
+    "name": "ASCC Portal",
+    "version": "1.0",
+    "description": "Quick search for the ASCC Portal",
+    "permissions": ["contextMenus", "tabs", "http://*/*"],
+    "background_page": "background.html"
+}
