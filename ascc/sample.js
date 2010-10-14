@@ -5,40 +5,31 @@
 // A generic onclick callback function.
 function asccClick(info, tab) {
     
+    var url;
     
-    var url = 'http://127.0.0.1:5000/genes/search?gene='+info.selectionText;
+    
+    if (info.menuItemId == 2) {
+		url = 'http://127.0.0.1:5000/genes/search?gene='+info.selectionText;
+	} else if (info.menuItemId == 3) {
+		url = 'http://127.0.0.1:5000/datasets/search?dataset='+info.selectionText;
+	}
+    
     chrome.tabs.create({ url: url});
-    
 }
 
 
 // Get a selection context menu
 var context = 'selection';
 var title = "Stemformatics.org search";
-var id = chrome.contextMenus.create({"title": title, "contexts":[context],
-                                   "onclick": asccClick});
+
+var parent = chrome.contextMenus.create({"title": title, "contexts":[context],
+                                   });
 
 
-chrome.tabs.onCreated.addListener(function(tab) { 
-    window.addEventListener("mousedown", function(mouseEvent) {
-        
-        alert(mouseEvent.button);
-        if(mouseEvent.button == 2){
-            alert("you clicked right button");//can see this when right-click
-        }
-    }, 
-    false);
+var child1 = chrome.contextMenus.create(
+  {"title": "Gene Search", "parentId": parent, "onclick": asccClick, "contexts":[context]});
 
-      
-});
-
-
-
-    /*
-document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown = ContextMouseDown;
-function ContextMouseDown(event){
-        alert('rhgith sdafasdf');
-} */
+var child2 = chrome.contextMenus.create(
+  {"title": "Dataset Search", "parentId": parent, "onclick": asccClick, "contexts":[context]});
 
 
