@@ -1,7 +1,7 @@
 {
-    "name": "ASCC Portal",
+    "name": "Stemformatics.org gene search extension",
     "version": "1.0",
-    "description": "Quick search for the ASCC Portal",
+    "description": "Quick search for the Stemformatics.org Portal",
     "permissions": ["contextMenus", "tabs", "http://*/*"],
     "background_page": "background.html"
 }

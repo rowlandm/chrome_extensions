@@ -14,7 +14,7 @@ function asccClick(info, tab) {
 
 // Get a selection context menu
 var context = 'selection';
-var title = "ASCC Portal search";
+var title = "Stemformatics.org search";
 var id = chrome.contextMenus.create({"title": title, "contexts":[context],
                                    "onclick": asccClick});
 
