@@ -1,0 +1,7 @@
+{
+    "name": "NFL Fantasy Football",
+    "version": "0.1",
+    "description": "Quick search for Fantasy football fans",
+    "permissions": ["contextMenus", "tabs", "http://*/*"],
+    "background_page": "background.html"
+}
