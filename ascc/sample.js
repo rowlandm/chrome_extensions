@@ -6,7 +6,7 @@
 function asccClick(info, tab) {
     
     
-    var url = 'http://127.0.0.1:5000/searches/index?gene='+info.selectionText;
+    var url = 'http://127.0.0.1:5000/genes/search?gene='+info.selectionText;
     chrome.tabs.create({ url: url});
     
 }
