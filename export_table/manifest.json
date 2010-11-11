@@ -1,0 +1,13 @@
+{
+    "name": "Export Table",
+    "version": "0.1",
+    "description": "Export any kind of table",
+    "content_scripts": [
+		{
+		  "matches": ["http://*/*"],
+		  "js": ["jquery-1.4.3.min.js","table2CSV.js", "on_page_export_table.js"]
+		}
+	],
+    "permissions": ["contextMenus", "tabs", "http://*/*"],
+    "background_page": "background.html"
+}

@@ -1,0 +1,9 @@
+document.write('<!--  Rubicon Project tag -->\n<!--  Site: Fantasy Sports Ventures   Zone: My Site   Size: Leaderboard (728x90)  -->\n');
+
+var cb = Math.random();
+var d = document;
+d.write('<script language="JavaScript" type="text/javascript"');
+d.write('src="http://optimized-by.rubiconproject.com/a/5941/7720/12783-2.js?cb='+cb+'">');
+d.write('<\/scr'+'ipt>');
+
+document.write('\n<!-- end Rubicon Project tag -->');
