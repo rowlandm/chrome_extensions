@@ -9,9 +9,9 @@ function asccClick(info, tab) {
     
     
     if (info.menuItemId == 2) {
-		url = 'http://127.0.0.1:5000/genes/search?gene='+info.selectionText;
+		url = 'http://www.stemformatics.org/genes/search?gene='+info.selectionText;
 	} else if (info.menuItemId == 3) {
-		url = 'http://127.0.0.1:5000/datasets/search?dataset='+info.selectionText;
+		url = 'http://www.stemformatics.org/datasets/search';
 	}
     
     chrome.tabs.create({ url: url});
@@ -31,5 +31,4 @@ var child1 = chrome.contextMenus.create(
 
 var child2 = chrome.contextMenus.create(
   {"title": "Dataset Search", "parentId": parent, "onclick": asccClick, "contexts":[context]});
-
 
