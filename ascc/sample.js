@@ -7,23 +7,34 @@ function asccClick(info, tab) {
     
     var url;
     
-    
     if (info.menuItemId == 2) {
 		url = 'http://www.stemformatics.org/genes/search?gene='+info.selectionText;
 	} else if (info.menuItemId == 3) {
 		url = 'http://www.stemformatics.org/datasets/search';
+	} else if (info.menuItemId == 4) {
+		url = 'http://www.stemformatics.org';
 	}
     
     chrome.tabs.create({ url: url});
 }
 
 
+function genericOnClick(info, tab) {
+    
+    var url = 'http://www.stemformatics.org';
+	
+    chrome.tabs.create({ url: url});
+    
+}
+
+
 // Get a selection context menu
 var context = 'selection';
-var title = "Stemformatics.org search";
+var contextAll = 'all';
+var title = "Stemformatics.org home page";
 
-var parent = chrome.contextMenus.create({"title": title, "contexts":[context],
-                                   });
+var parent = chrome.contextMenus.create({"title": title, "contexts":[contextAll],"onclick": genericOnClick  });
+
 
 
 var child1 = chrome.contextMenus.create(
@@ -31,4 +42,3 @@ var child1 = chrome.contextMenus.create(
 
 var child2 = chrome.contextMenus.create(
   {"title": "Dataset Search", "parentId": parent, "onclick": asccClick, "contexts":[context]});
-
