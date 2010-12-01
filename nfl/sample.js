@@ -15,6 +15,8 @@ function genericOnClick(info, tab) {
 		url = 'http://www.fftoday.com/stats/fantasystats.php?o=3&PosID=10&Side=Allowed&LeagueID=106834';
 	} else if (info.menuItemId == 4) {
 		url = 'http://games.espn.go.com/gridiron/en/entry?entryID=68832';
+	} else if (info.menuItemId == 5) {
+		url = 'http://www.fantasypros.com/nfl/start/';
 	}
     
     chrome.tabs.create({ url: url});
@@ -37,3 +39,7 @@ var child2 = chrome.contextMenus.create(
 
 var child3 = chrome.contextMenus.create(
   {"title": "Gridiron Challenge", "parentId": parent, "onclick": genericOnClick, "contexts":[contextAll]});
+var child4 = chrome.contextMenus.create(
+  {"title": "Fantasy Pros", "parentId": parent, "onclick": genericOnClick, "contexts":[contextAll]});
+
+

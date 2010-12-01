@@ -1,0 +1,220 @@
+
+div.fpn_banner {
+	background: #ccc;
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 11px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+
+div.fpn_banner_sprite {
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 11px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+div.fpn_banner_sprite10 {
+	background: #00a160 url(/images/banner/bg_fpn_banner_sprite10.gif) top left repeat-x;
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 11px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+
+div.fpn_banner img {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+div.fpn_banner_sprite img {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+div.fpn_banner_sprite10 img {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+
+div.fpn_banner form {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+div.fpn_banner_sprite form {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+div.fpn_banner_sprite10 form {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+div.fpn_title {
+	background: #111;
+	margin: 0 auto;
+	padding: 0;
+	border-bottom: 1px #eee solid;
+}
+
+div.fpn_title_sprite {
+	background: #fff303;
+	margin: 0 auto;
+	padding: 0;
+	border-bottom: 1px #eee solid;
+}
+
+div.fpn_title_sprite10 {
+	background: transparent;
+	margin: 0 auto;
+	padding: 0;
+	border-bottom: 1px #eee solid;
+}
+
+div.fpn_title div {
+	margin: 0 auto;
+}
+
+div.fpn_title_sprite div {
+	margin: 0 auto;
+}
+
+div.fpn_title_sprite10 div {
+	margin: 0 auto;
+}
+
+div.fpn_main {
+	text-align: left;
+	margin: 0 auto;
+	padding: 0;
+}
+
+div.fpn_main_sprite {
+	background: #00a160 url(http://www.fantasyplayers.com/images/banner/bg_fpn_banner_sprite.gif) 50%  0 no-repeat;
+	text-align: left;
+	margin: 0 auto;
+	padding: 0;
+}
+
+div.fpn_main_sprite10 {
+	background:transparent;
+	text-align: left;
+	margin: 0 auto;
+	padding: 0;
+}
+
+div.fpn_main_wheel {
+	background: #000509 url(http://www.fantasyplayers.com/images/banner/bg_fpn_banner_wheel.gif) 50%  0 no-repeat;
+	text-align: left;
+	margin: 0 auto;
+	padding: 0;
+}
+
+div.fpn_main td, div.fpn_main td td {
+	vertical-align: middle;
+	font-size: 1em;
+}
+
+div.fpn_main_sprite td, div.fpn_main_sprite td td {
+	vertical-align: middle;
+	font-size: 1em;
+}
+
+div.fpn_main_sprite10 td, div.fpn_main_sprite10 td td {
+	vertical-align: middle;
+	font-size: 1em;
+}
+
+div.fpn_main select {
+	width: 145px;
+	font-size: 1em;
+	padding: 1px;
+	border: 1px #89a solid;
+}
+div.fpn_main_sprite select {
+	width: 145px;
+	font-size: 1em;
+	padding: 1px;
+	border: 1px #89a solid;
+}
+
+div.fpn_main_sprite10 select {
+	width: 145px;
+	font-size: 1em;
+	padding: 1px;
+	border: 1px #89a solid;
+}
+
+input.fpn_searchbox, input.fpn_searchbox-active {
+	width: 120px;
+	background: #fff url(http://www.fantasyplayers.com/images/banner/search_bkg.gif) no-repeat;
+	background-position: center left;
+	padding: 4px 1px 1px 1px;
+	border: 1px #89a solid;
+}
+
+input.fpn_searchbox-active {
+	background: #fff;
+	background-image: none;
+}
+
+div.fpn_main input.btn {
+	width: auto;
+	height: auto;
+	margin: 0 5px;
+	padding: 0;
+	border: none;
+}
+
+div.fpn_main_sprite input.btn {
+	width: auto;
+	height: auto;
+	margin: 0 5px;
+	padding: 0;
+	border: none;
+}
+
+div.fpn_main_sprite10 input.btn {
+	width: auto;
+	height: auto;
+	margin: 0 5px;
+	padding: 0;
+	border: none;
+}
+
+
+span.fpn_smlgry {
+	color: #666;
+	font-size: .9em;
+	font-weight: bold;
+	white-space: nowrap;
+	padding: 0 5px;
+}
+
+a.fpn_sponsor, a.fpn_sponsor:link, a.fpn_sponsor:visited {
+	display: block;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 3px;
+}
+
+a.fpn_sponsor:hover, a.fpn_sponsor:active {
+	color: #666;
+	text-decoration: none;
+}
